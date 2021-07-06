@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            background: skyblue;
+            height: 50px;
+            
+        }
+        .list1{
+            list-style: none;
+            margin: 0;
+            line-height: 50px;
+            
+        }
+       .list1 > li{
+            display: inline-block;
+            margin-left: 50px;
+            
+            
+        }
+        #provinces:hover{
+            background: white;
+            line-height: 50px;
+            cursor: pointer;
+            
+
+        }
+        #provinces:hover .list2{
+            position: absolute;
+            display: block;
+        }
+        
+        .list2{
+            list-style: none;
+            display: none;
+            background: lightslategray;
+            margin: 0;
+            padding: 5px;
+            
+            
+        } 
+        .list2 li{
+            width: 90px;
+        }
+    
+        #punjab:hover{
+            background-color: red;
+            cursor: pointer;
+            
+           
+            
+        }
+        #punjab:hover .list3{
+            position: absolute;
+            display: block;
+            
+        }
+        .list3{
+            list-style: none;
+            display: none;
+            background: steelblue;
+            position: relative;
+            left: 90px;
+            
+        }
+        .list3 li{
+            width: 90px;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <ol class="list1">
+            <li id="provinces">provinces
+
+                <ol class="list2">
+                    <li id="punjab">Punjab
+                        <ol class="list3">
+                            <li>Faisalabad</li>
+                            <li>Lahore</li>
+                            <li>Multan</li>
+                        </ol>
+                    </li>
+                    <li>Sindh</li>
+                    <li>Blochistan</li>
+                    <li>KPK</li>
+                </ol>
+            </li>
+            <li>contact</li>
+            <li>services</li>
+            <li>Help</li>
+        </ol>
+    </nav>
+</body>
+</html>
